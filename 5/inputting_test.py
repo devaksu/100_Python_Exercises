@@ -1,14 +1,13 @@
-from unittest import TestCase, mock
-from inputting import Inputoutputstring
+import unittest
+import inputting
 
-strObj = Inputoutputstring()
+strObj = inputting.Inputoutputstring()
 
-class InputoutputTest(TestCase):
-    @mock.patch('inputting.input', create=True)
-    def TestgetString(self, mocked_input):
-        mocked_input.side_effect = 'Tämä lause'
-        lause = strObj.printString()
-        return self.assertEqual(lause, 'TÄMÄ LAUSE')
+class InputoutputTest(unittest.TestCase):
+    
+    def test_printString(self):
+        lause = strObj.printString("Tämä lause")
+        return self.assertEqual(lause, "TÄMÄ LAUSE")
 
-
-     
+if __name__ == '__main__':
+    unittest.main()

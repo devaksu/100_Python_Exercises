@@ -7,15 +7,17 @@ Also please include simple test function to test the class methods.
 
 """
 
-class Inputoutputstring(object):
+class Inputoutputstring:
     def __init__(self):
-        self.s = ""
-    
+        self.string = ""
+
     def getString(self):
-        self.s = input("Please give a string: ")
+        self.string = input("Anna lause: ")
+        return self.string
 
-    def printString(self):
-        print(self.s.upper)
-
+    
+    def printString(self,string:str):
+        self.string = string.upper()
+        return self.string
 
 
