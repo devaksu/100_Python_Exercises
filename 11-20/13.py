@@ -18,8 +18,16 @@ def letter_calc():
     for d in user_input:
         if d.isalpha() == True:
             letters += 1
-        else:
+        
+        elif d.isdigit() == True:
             digits += 1
+
+        elif d.isspace() == True:
+            pass 
+          
+        else:
+            raise ValueError("No idea of one of characters")
+            
 
     print(f'LETTERS {letters} \nDIGITS {digits}')
 
