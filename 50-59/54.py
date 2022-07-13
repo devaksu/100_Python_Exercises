@@ -10,3 +10,5 @@ def func54():
         print('ZeroDivisionError occurred')
     finally:
         print("Printing something")
+
+func54()
