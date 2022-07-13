@@ -1,6 +1,6 @@
-# 100 or so Python Exercises for my personal development :)
+# 100 or so Python Exercises for my personal development
 
-Currently at row 1216
+## Work in Progress! Currently at row 1216
 
 Source: 
 https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises.txt
