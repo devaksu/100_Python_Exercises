@@ -23,5 +23,11 @@ def func70():
 
     print(random_float)
 
+#Using uniform
+def func69_70(lower:int, upper:int):
+    random_float = random.uniform(lower,upper)
+    print(random_float)
+
 func69()
 func70()
+func69_70(10,100)
