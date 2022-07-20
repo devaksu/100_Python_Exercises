@@ -2,10 +2,9 @@
 Question:
 Please write a program which prints permutations 1 -> n and prints them
 """
+
 from itertools import permutations
 from math import perm
-
-# With math.perm()
 
 def f87(n:int=3,k:int=2):
     """
